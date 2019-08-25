@@ -16,6 +16,22 @@
   <body>
       <div id="root"></div>
       <script type="text/babel">
+      const { HashRouter, Route, NavLink, Switch, Redirect } = ReactRouterDOM;
+      const { Component } = React;
+      const { render } = ReactDOM;
+
+      class App extends React.Component {
+        constructor() {
+          super();
+          this.state = {
+            products: [],
+            companies: []
+          };
+        }
+
+
+
+      ReactDOM.render(<App />, document.querySelector("#root"));
     </script>
   </body>
 </html>
