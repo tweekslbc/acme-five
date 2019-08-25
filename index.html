@@ -20,16 +20,19 @@
       const { Component } = React;
       const { render } = ReactDOM;
 
+
       class App extends React.Component {
         constructor() {
           super();
           this.state = {
             products: [],
-            companies: []
+            companies: [],
+            offerings: [],
           };
         }
-
-
+      }
+//need two pages, under 5 and 5 and over. each product is clickable, then lists who offers that product and at what price
+//will need to call products offerings and companies
 
       ReactDOM.render(<App />, document.querySelector("#root"));
     </script>
